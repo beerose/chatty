@@ -1,0 +1,6 @@
+%{"cowboy": {:git, "https://github.com/ninenines/cowboy.git", "572d38082f177a9b975153569b928375a5902b48", [tag: "2.2.0"]},
+  "cowlib": {:git, "https://github.com/ninenines/cowlib.git", "804d5262a3369623683213b14d6b936066fc7aab", [tag: "2.4.0"]},
+  "grpc": {:git, "https://github.com/tony612/grpc-elixir.git", "01b815ee3ff11fe761f94cc4361ef861b0b12f0d", []},
+  "gun": {:git, "https://github.com/ninenines/gun.git", "e49f8af96da160b0417d21d5550fedd216acc263", [tag: "1.0.0-rc.1"]},
+  "protobuf": {:hex, :protobuf, "0.5.4", "2e1b8eec211aff034ad8a14e3674220b0158bfb9a3c7128ac9d2a1ed1b3724d3", [:mix], [], "hexpm"},
+  "ranch": {:git, "https://github.com/ninenines/ranch.git", "cbe24f6fb9833474b22a06fc22cb1a8f168f7fbc", []}}

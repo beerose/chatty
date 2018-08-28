@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package chatty;
+
+// The chat service definition.
+service ChatService {
+  // Sends a message
+  rpc SendMessage (SendMessageRequest) returns (SendMessageReply) {}
+  // Get messages
+  rpc FetchMessages (FetchMessagesRequest) returns (FetchMessagesReply) {}
+}
+
+// The request message containing the user's name and message body.
+message SendMessageRequest {
+  ChatMessage chat_message = 1;
+}
+
+message SendMessageReply {}
+
+message FetchMessagesRequest {}
+
+message FetchMessagesReply {
+    repeated ChatMessage messages = 1;
+}
+
+message ChatMessage {
+    string sender = 1;
+    string text = 2;
+}
